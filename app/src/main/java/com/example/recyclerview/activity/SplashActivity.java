@@ -80,7 +80,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
         //Set animate text
-        animatText("Loading");
+        animatText("Cargando");
 
 
 

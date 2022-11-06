@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.recyclerview">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="APP PsicoJob"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> android:exported="false"/>
+        <activity android:name=".activity.DetailActivity"> </activity>
+
+    <activity android:name=".activity.MainActivity"> </activity>
+
+    <activity android:name=".activity.Formulario">   </activity>
+
+    <activity android:name=".activity.LoginActivity">   </activity>
+
+    <activity android:name=".activity.Bienvenido"> </activity>
+
+        <activity android:name=".activity.Cuestionariouno"> </activity>
+
+        <activity android:name=".activity.Cuestionariodos"> </activity>
+
+        <activity android:name=".activity.MainActivity2"> </activity>
+
+        <activity android:name=".activity.GyroscopeActivity"> </activity>
+
+        <activity android:name=".activity.MainActivity3"> </activity>
+
+        <activity android:name=".activity.ProximityActivity"> </activity>
+
+        <activity android:name=".activity.RotationVectorActivity"> </activity>
+
+    </application>
+
+</manifest>

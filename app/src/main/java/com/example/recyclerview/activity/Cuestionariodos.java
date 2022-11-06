@@ -36,7 +36,9 @@ public class Cuestionariodos extends AppCompatActivity {
         r2 = (RadioButton) findViewById(R.id.idRadiodos);
         r3 = (RadioButton) findViewById(R.id.idRadiotres);
 
-        Button btnInsertar = findViewById(R.id.buttonAnte);
+        Button btnInsertar = findViewById(R.id.button5);
+        Button btnInsertar1 = findViewById(R.id.buttonAnte);
+
         btnInsertar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,31 +46,43 @@ public class Cuestionariodos extends AppCompatActivity {
                 startActivity(intent);
 
 
-                    }
-                });
             }
+        });
 
-            public void onclick(View view) {
-                if (view.getId() == R.id.texopcionesdos) {
-                    validar();
-                }
 
-            }
+        btnInsertar1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cuestionariodos.this, Cuestionariouno.class);
+                startActivity(intent);
 
-            private void validar() {
-                String cad = "Seleccionado: \n";
-
-                if (r1.isChecked() == true) {
-                    cad += "La encontraste insuficiente, dinos qué le falta";
-                }
-                if (r2.isChecked()) {
-                    cad += "La encontraste buena ¿qué debemos mejorar?";
-                }
-                if (r3.isChecked()) {
-                    cad += "La encontraste muy buena, que bien¡¡";
-                }
-
-                Toast.makeText(getApplicationContext(), cad, Toast.LENGTH_SHORT).show();
 
             }
+        });
+
+    }
+
+    public void onclick(View view) {
+        if (view.getId() == R.id.texopcionesdos) {
+            validar();
         }
+
+    }
+
+    private void validar() {
+        String cad = "Seleccionado: \n";
+
+        if (r1.isChecked() == true) {
+            cad += "La encontraste insuficiente, dinos qué le falta";
+        }
+        if (r2.isChecked()) {
+            cad += "La encontraste buena ¿qué debemos mejorar?";
+        }
+        if (r3.isChecked()) {
+            cad += "La encontraste muy buena, que bien¡¡";
+        }
+
+        Toast.makeText(getApplicationContext(), cad, Toast.LENGTH_SHORT).show();
+
+    }
+}

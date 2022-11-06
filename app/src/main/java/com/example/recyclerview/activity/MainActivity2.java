@@ -34,7 +34,7 @@ public class MainActivity2 extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
         button = (Button)findViewById(R.id.button);
         button2 = (Button)findViewById(R.id.button2);
         button3 = (Button)findViewById(R.id.button3);
@@ -43,6 +43,18 @@ public class MainActivity2 extends AppCompatActivity implements
         button.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
+
+        Button btnInsertar = findViewById(R.id.button6);
+
+        btnInsertar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
+                startActivity(intent);
+
+
+            }
+        });
     }
 
     private void UnSegundo(){
@@ -57,7 +69,7 @@ public class MainActivity2 extends AppCompatActivity implements
                 for(int i=1; i<=10; i++){
                     UnSegundo();
                 }
-                Toast.makeText(getBaseContext(), "Tarea Larga Finalizada", Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), "Tarea larga finalizada", Toast.LENGTH_LONG).show();
                 break;
             case R.id.button2:
                 Hilos();
@@ -81,7 +93,7 @@ public class MainActivity2 extends AppCompatActivity implements
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(getBaseContext(), "Tarea Larga Finalizada", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getBaseContext(), "Tarea larga finalizada", Toast.LENGTH_LONG).show();
                     }
                 });
             }
@@ -115,13 +127,13 @@ public class MainActivity2 extends AppCompatActivity implements
         protected void onPostExecute(Boolean resultado) {
             //super.onPostExecute(aVoid);
             if(resultado){
-                Toast.makeText(getBaseContext(), "Tarea Larga Finalizada en AsyncTask", Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), "Tarea larga finalizada en AsyncTask", Toast.LENGTH_LONG).show();
             }
         }
         @Override
         protected void onCancelled() {
             super.onCancelled();
-            Toast.makeText(getBaseContext(), "Tarea Larga Ha sido cancelada", Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(), "Tarea larga ha sido cancelada", Toast.LENGTH_LONG).show();
         }
     }
 }

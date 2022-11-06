@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">IPSantoTomás</string>
+    <string-array name="Carreras">
+        <item>Irma Santelices</item>
+        <item>Paola Villegas</item>
+        <item>Esteban Azua</item>
+        <item>Taty Taylor</item>
+        <item>Catherine Escobar</item>
+        <item>Cristobal Fuentes </item>
+        <item>Jonathan Rebolledo </item>
+        <item>Fernando González</item>
+        <item>Sergio Vega</item>
+        <item>Camila Rubilar</item>
+        <item>Marcela Rivera</item>
+        <item>Marco Decinti</item>
+        <item>Jorge Arellano</item>
+        <item>Jenny Cadin</item>
+        <item>Emilia Santelices</item>
+        <item>Patricio Corvalán</item>
+        <item>Constanza Huerta</item>
+
+
+    </string-array>
+
+    <string name="descripcion_temas">
+Gran parte del éxito de una postulación a un trabajo, depende en gran medida del curriculum vitae, siendo este documento, la carta de presentación de un candidato. Si no sabes construir uno actualizado, te ayudamos en este artículo
+
+
+    </string>
+
+
+    <string name="descripcion_larga">
+
+        El CV es un traje hecho a la medida y necesita palabras clave para hacer match con la oferta
+
+El currículum es la forma de comunicar tu interés y tu calce con el cargo que se está ofertando. Teniendo en cuenta aquello es fundamental personalizarlo para cada postulación. Revisa bien la oferta laboral y examina cuáles son los requisitos. Analiza si lo requerido es parte de tus atributos y asegúrate que tu CV los demuestre. Esto es lo que llamamos palabras claves del CV que facilitan que el reclutador se dé cuenta que debes pasar al siguiente nivel.
+
+Detalles que causan una primera impresión positiva:
+
+Conciso y ordenado
+Extensión máxima de 2 páginas
+Fácil de leer
+Sin errores de ortografía ni de tipografía
+Redacción en tercera persona
+Ordenar tu experiencia laboral desde la más reciente a la más antigua
+Formato: Tipografías clásicas, tamaño no menor a 11 puntos. El uso de negritas, mayúsculas y líneas de división constituyen herramientas que ayudan a la lectura, al guiar la vista de quien revisa el CV
+Enviar el currículum en PDF y que el nombre del archivo diga tu nombre
+Si envías el CV por correo es importante personalizar el envío, saludando a la persona, indicando el interés por el cargo de manera breve y adjuntando el archivo correcto
+
+    </string>
+
+    <string name="editTextTextPersonName">Username</string>
+    <string name="editTextTextEmailAddress">Email</string>
+    <string name="editTextTextPassword">Password</string>
+
+    <string name="PsicoApp">Thead y AsyncTask en Android</string>
+    <string name="tarea_pesada">Tarea pesada (Con riesgo de
+ANR)</string>
+    <string name="hilos">Hilos</string>
+    <string name="asynctask">AsyncTask</string>
+    <string name="en_ocasiones">Android está diseñado para ofrecerle al
+usuario la opción de terminar aquellas aplicaciones que demoran más de
+5 segundos en responder a los eventos del usuario. Cuando esto pasa,
+podemos ver el famoso Diálogo ANR (Application not respond).</string>
+    <string name="es_fundamental">Es fundamental para la capacidad de
+respuesta de la IU de la aplicación que no bloquee el subproceso de IU.
+Si tienes que realizar operaciones que no son inmediatas, debes
+asegurarte de hacerlo en subprocesos separados (subprocesos en segundo
+planoo de trabajo)</string>
+
+    <string name="la_interfaz_asynctask">La interfaz AsyncTask, fue
+creada con el objetivo de liberar al programador del uso de hilos, la
+sincronización entre ellos y la presentación de resultados en el hilo
+primario. Esta clase unifica los aspectos relacionados que se
+realizarán en segundo plano y además gestiona de forma asíncrona la
+ejecución de las tareas.</string>
+    <string name="checkbox">CHECK DE PRUEBA: De click para saber si el
+proceso encargado de la interfase de la aplicación responde.</string>
+
+
+
+
+
+
+</resources>
