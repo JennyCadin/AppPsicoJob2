@@ -16,7 +16,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyCGyFI1Q3iq3Jg_mO70om16ZMX0fGfAieg" />
 
         <activity android:name=".activity.SplashActivity" android:exported="true">
             <intent-filter>
@@ -48,6 +48,8 @@
         <activity android:name=".activity.ProximityActivity"> </activity>
 
         <activity android:name=".activity.RotationVectorActivity"> </activity>
+
+        <activity android:name=".activity.MapsActivity"> </activity>
 
     </application>
 

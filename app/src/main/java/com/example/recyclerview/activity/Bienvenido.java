@@ -33,16 +33,27 @@ public class Bienvenido extends AppCompatActivity {
 
         tv1 = (TextView) findViewById(R.id.tv1);
         String nombre = getIntent().getStringExtra("nombre");
-        tv1.setText("Hola  "+ nombre+ " :D");
+        tv1.setText("Hola  " + nombre + " :D");
 
+        Button btnInsertar1 = findViewById(R.id.button7);
         Button btnInsertar = findViewById(R.id.button3);
+
         btnInsertar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Bienvenido.this,MainActivity.class);
+                Intent intent = new Intent(Bienvenido.this, MainActivity.class);
                 startActivity(intent);
             }
         });
-    }
 
+        btnInsertar1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Bienvenido.this, MapsActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+    }
 }
