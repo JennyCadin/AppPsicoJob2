@@ -5,6 +5,13 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="true" />
+
 
     <application
         android:allowBackup="true"
@@ -41,13 +48,16 @@
 
         <activity android:name=".activity.MainActivity2"> </activity>
 
-        <activity android:name=".activity.GyroscopeActivity"> </activity>
+        <activity android:name=".activity.GyroscopeActivity"
+            android:screenOrientation="fullSensor"> </activity>
 
         <activity android:name=".activity.MainActivity3"> </activity>
 
-        <activity android:name=".activity.ProximityActivity"> </activity>
+        <activity android:name=".activity.ProximityActivity"
+            android:screenOrientation="fullSensor"> </activity>
 
-        <activity android:name=".activity.RotationVectorActivity"> </activity>
+        <activity android:name=".activity.RotationVectorActivity"
+            android:screenOrientation="fullSensor"> </activity>
 
         <activity android:name=".activity.MapsActivity"> </activity>
 
