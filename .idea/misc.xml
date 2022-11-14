@@ -4,15 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_bienvenido.xml" value="0.25" />
-        <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_formulario.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_edit.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_formulario.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_gyroscope.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_main.xml" value="0.22418478260869565" />
         <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_main2.xml" value="0.25502008032128515" />
         <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_main3.xml" value="0.33" />
         <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_maps.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_rotation_vector.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/activity_view.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/cuestionario_dos.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/cuestionario_uno.xml" value="0.25181159420289856" />
+        <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/item_list_view.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/login.xml" value="0.24909420289855072" />
         <entry key="..\:/Users/Jenny Cadin/AndroidStudioProjects/AppPsicoJob/app/src/main/res/drawable/ic_logodos.xml" value="0.213" />
         <entry key="..\:/Users/Jenny Cadin/AndroidStudioProjects/AppPsicoJob/app/src/main/res/layout/Login.xml" value="0.25885416666666666" />

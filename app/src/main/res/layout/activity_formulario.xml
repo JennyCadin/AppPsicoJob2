@@ -21,7 +21,7 @@
 android:id="@+id/txtUsuario"
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
-android:hint="Nombre usuario"
+android:hint="Nombre"
 android:layout_marginTop="30dp"/>
 
 <EditText
@@ -32,72 +32,45 @@ android:hint="Rut"
 android:layout_marginTop="10dp"/>
 
 <EditText
-android:id="@+id/txtNombre"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:hint="Nombre"
-android:layout_marginTop="10dp"/>
-
-<EditText
-android:id="@+id/txtApellidos"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:hint="Apellidos"
-android:layout_marginTop="10dp"/>
-
-
-<EditText
 android:id="@+id/txtEdad"
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
 android:hint="Edad"
 android:layout_marginTop="10dp"/>
 
-<EditText
-android:id="@+id/txtGenero"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:hint="Género"
-android:layout_marginTop="10dp"/>
-
-<EditText
-android:id="@+id/txtTelefono"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:hint="Teléfono"
-android:layout_marginTop="10dp"/>
-
-<EditText
-android:id="@+id/txtDireccion"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:hint="Dirección"
-android:layout_marginTop="10dp"/>
 
 
-<EditText
-android:id="@+id/txtCorreo"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:hint="Correo electrónico"
-android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:layout_marginTop="10dp"/>
 
-<EditText
-android:id="@+id/txtClave"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:hint="Clave"
-android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/txtInteres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tema interés"
+        android:layout_marginTop="10dp"/>
 
-<Button
 
-android:id="@+id/btnInsertRegis"
-android:layout_width="104dp"
-android:layout_height="wrap_content"
-android:layout_marginStart="149dp"
-android:layout_marginTop="15dp"
-android:layout_marginEnd="149dp"
-android:layout_marginBottom="19dp"
-android:text="Validar"/>
 
-    </LinearLayout>
+    <Button
+
+        android:id="@+id/btnInsertRegis"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="19dp"
+        android:text="Registrar datos" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mira los temas de interés de otros usuarios" />
+
+</LinearLayout>

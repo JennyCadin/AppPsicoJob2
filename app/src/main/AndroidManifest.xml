@@ -61,6 +61,13 @@
 
         <activity android:name=".activity.MapsActivity"> </activity>
 
+        <activity android:name=".activity.Editar"> </activity>
+
+        <activity android:name=".activity.Leer"> </activity>
+
+
+
+
     </application>
 
 </manifest>
