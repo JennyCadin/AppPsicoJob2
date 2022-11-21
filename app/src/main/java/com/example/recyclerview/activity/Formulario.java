@@ -65,12 +65,19 @@ public class Formulario extends AppCompatActivity {
         btnInsertar2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Formulario.this, Leer.class);
+                Intent intent = new Intent(getApplicationContext(), Leer.class);
                 startActivity(intent);
 
 
             }
         });
+        b_agregar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                insertar();
+            }
+        });
+
     }
 
     public void insertar()
@@ -84,15 +91,15 @@ public class Formulario extends AppCompatActivity {
             String interes = ed_interes.getText().toString();
 
             SQLiteDatabase db = openOrCreateDatabase("BD_EJEMPLO", Context.MODE_PRIVATE,null);
-            db.execSQL("CREATE TABLE IF NOT EXISTS persona(id INTEGER PRIMARY KEY AUTOINCREMENT,nombre VARCHAR,apellido VARCHAR,edad VARCHAR)");
+            db.execSQL("CREATE TABLE IF NOT EXISTS persona(id INTEGER PRIMARY KEY AUTOINCREMENT,nombre VARCHAR,rut VARCHAR,edad VARCHAR,telefono VARCHAR,interes VARCHAR)");
 
             String sql = "insert into persona(nombre,rut,edad,telefono,interes)values(?,?,?,?,?)";
             SQLiteStatement statement = db.compileStatement(sql);
             statement.bindString(1,nombre);
             statement.bindString(2,rut);
             statement.bindString(3,edad);
-            statement.bindString(2,telefono);
-            statement.bindString(3,interes);
+            statement.bindString(4,telefono);
+            statement.bindString(5,interes);
 
             statement.execute();
             Toast.makeText(this,"Datos agregados satisfactoriamente, felicitaciones.",Toast.LENGTH_LONG).show();
@@ -100,8 +107,9 @@ public class Formulario extends AppCompatActivity {
             ed_nombre.setText("");
             ed_rut.setText("");
             ed_edad.setText("");
-            ed_telefono.requestFocus();
-            ed_interes.requestFocus();
+            ed_telefono.setText("");
+            ed_interes.setText("");
+            ed_nombre.requestFocus();
         }
         catch (Exception ex)
         {
