@@ -1,4 +1,6 @@
 package com.example.recyclerview.activity;
+import static com.example.recyclerview.activity.Constants.NOMBRE_BASE_DATOS;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -61,7 +63,6 @@ public class Formulario extends AppCompatActivity {
             }
         });
 
-
         btnInsertar2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,7 +91,7 @@ public class Formulario extends AppCompatActivity {
             String telefono = ed_telefono.getText().toString();
             String interes = ed_interes.getText().toString();
 
-            SQLiteDatabase db = openOrCreateDatabase("BD_EJEMPLO", Context.MODE_PRIVATE,null);
+            SQLiteDatabase db = openOrCreateDatabase(NOMBRE_BASE_DATOS, Context.MODE_PRIVATE,null);
             db.execSQL("CREATE TABLE IF NOT EXISTS persona(id INTEGER PRIMARY KEY AUTOINCREMENT,nombre VARCHAR,rut VARCHAR,edad VARCHAR,telefono VARCHAR,interes VARCHAR)");
 
             String sql = "insert into persona(nombre,rut,edad,telefono,interes)values(?,?,?,?,?)";

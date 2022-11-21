@@ -1,5 +1,7 @@
 package com.example.recyclerview.activity;
 
+import static com.example.recyclerview.activity.Constants.NOMBRE_BASE_DATOS;
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -23,7 +25,6 @@ public class Editar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
 
-
         ed_id = findViewById(R.id.txtId);
         ed_nombre = findViewById(R.id.txtUsuario);
         ed_rut = findViewById(R.id.txtRut);
@@ -41,8 +42,8 @@ public class Editar extends AppCompatActivity {
         String txtUsuario = i.getStringExtra("nombre").toString();
         String txtRut = i.getStringExtra("rut").toString();
         String txtEdad = i.getStringExtra("edad").toString();
-        String txtTelefono = i.getStringExtra("teléfono").toString();
-        String txtInteres = i.getStringExtra("interés").toString();
+        String txtTelefono = i.getStringExtra("telefono").toString();
+        String txtInteres = i.getStringExtra("interes").toString();
 
         ed_id.setText(txtId);
         ed_nombre.setText(txtUsuario);
@@ -80,8 +81,7 @@ public class Editar extends AppCompatActivity {
         {
             String id = ed_id.getText().toString();
 
-            SQLiteDatabase db = openOrCreateDatabase("BD_PSICOJOB", Context.MODE_PRIVATE,null);
-
+            SQLiteDatabase db = openOrCreateDatabase(NOMBRE_BASE_DATOS, Context.MODE_PRIVATE,null);
 
             String sql = "delete from persona where id = ?";
             SQLiteStatement statement = db.compileStatement(sql);
@@ -114,7 +114,7 @@ public class Editar extends AppCompatActivity {
             String interes = ed_interes.getText().toString();
             String id = ed_id.getText().toString();
 
-            SQLiteDatabase db = openOrCreateDatabase("BD_PSICOBOH",Context.MODE_PRIVATE,null);
+            SQLiteDatabase db = openOrCreateDatabase(NOMBRE_BASE_DATOS,Context.MODE_PRIVATE,null);
 
             String sql = "update persona set nombre = ?,rut=?,edad=?,telefono=?,interes=? where id= ?";
             SQLiteStatement statement = db.compileStatement(sql);

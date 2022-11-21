@@ -1,5 +1,7 @@
 package com.example.recyclerview.activity;
 
+import static com.example.recyclerview.activity.Constants.NOMBRE_BASE_DATOS;
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -24,7 +26,7 @@ public class Leer extends AppCompatActivity {
         setContentView(R.layout.activity_view);
 
         try{
-            SQLiteDatabase db = openOrCreateDatabase("BD_APP PSICOJOB", Context.MODE_PRIVATE,null);
+            SQLiteDatabase db = openOrCreateDatabase(NOMBRE_BASE_DATOS, Context.MODE_PRIVATE,null);
             lst1 = findViewById(R.id.lst1);
             final Cursor c = db.rawQuery("select * from persona",null);
             int id = c.getColumnIndex("id");
@@ -82,5 +84,4 @@ public class Leer extends AppCompatActivity {
 
     }
 }
-
 
