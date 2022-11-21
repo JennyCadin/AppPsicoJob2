@@ -39,10 +39,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIngresonombre" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txtIngresonombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
@@ -50,9 +50,8 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:hint="@string/editTextTextPersonName"
+        android:hint="Nombre usuario"
         android:inputType="textPersonName"
-        android:text="Nombre usuari@"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +77,7 @@
         android:layout_width="518dp"
         android:layout_height="217dp"
         android:layout_marginBottom="54dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtIngresonombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +86,7 @@
         app:srcCompat="@drawable/imgparalogin" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttoningreso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
@@ -111,6 +110,6 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/buttoningreso" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
