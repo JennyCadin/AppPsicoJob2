@@ -30,14 +30,6 @@ public class LoginActivity extends AppCompatActivity {
         Button btnInsertar1 = findViewById(R.id.buttoningreso);
         Button btnInsertar = findViewById(R.id.button2);
 
-        btnInsertar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this,Bienvenido.class);
-                startActivity(intent);
-            }
-        });
-
 
         btnInsertar1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,5 +40,16 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnInsertar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this,Formulario.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 }
