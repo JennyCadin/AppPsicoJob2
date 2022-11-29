@@ -1,32 +1,19 @@
-package com.jenny.psicojob.activity;
-import static com.jenny.psicojob.activity.Constants.NOMBRE_BASE_DATOS;
+package com.jenny.appsicojob.activity;
+import static com.jenny.appsicojob.activity.Constants.NOMBRE_BASE_DATOS;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.AdapterView;
 import android.widget.EditText;
 
-import com.jenny.psicojob.R;
-import com.jenny.psicojob.adaptador.RecyclerAdapter;
-import com.jenny.psicojob.model.ItemList;
+import com.jenny.appsicojob.R;
 
-import java.util.ArrayList;
-import java.util.List;
 import android.content.Context;
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
-import android.util.Log;
 import android.widget.Toast;
 
 public class Formulario extends AppCompatActivity {

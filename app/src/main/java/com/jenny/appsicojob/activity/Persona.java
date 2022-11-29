@@ -1,4 +1,4 @@
-package com.jenny.psicojob.activity;
+package com.jenny.appsicojob.activity;
 
 public class Persona {
     protected String id;

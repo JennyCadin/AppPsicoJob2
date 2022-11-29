@@ -1,4 +1,4 @@
-package com.jenny.psicojob.model;
+package com.jenny.appsicojob.model;
 
 import java.io.Serializable;
 

@@ -1,6 +1,6 @@
-package com.jenny.psicojob.activity;
+package com.jenny.appsicojob.activity;
 
-import static com.jenny.psicojob.activity.Constants.NOMBRE_BASE_DATOS;
+import static com.jenny.appsicojob.activity.Constants.NOMBRE_BASE_DATOS;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
-import com.jenny.psicojob.R;
+import com.jenny.appsicojob.R;
 
 public class Leer extends AppCompatActivity {
     private ListView lst1;

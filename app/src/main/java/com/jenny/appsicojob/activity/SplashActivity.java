@@ -1,4 +1,4 @@
-package com.jenny.psicojob.activity;
+package com.jenny.appsicojob.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,9 +14,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.jenny.psicojob.R;
+import com.jenny.appsicojob.R;
 
 public class SplashActivity extends AppCompatActivity {
 

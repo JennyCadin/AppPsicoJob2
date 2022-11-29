@@ -1,31 +1,17 @@
-package com.jenny.psicojob.activity;
+package com.jenny.appsicojob.activity;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.Button;
 
-import com.jenny.psicojob.R;
-import com.jenny.psicojob.adaptador.RecyclerAdapter;
-import com.jenny.psicojob.model.ItemList;
+import com.jenny.appsicojob.R;
 
-import java.util.ArrayList;
-import java.util.List;
-import android.os.Bundle;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

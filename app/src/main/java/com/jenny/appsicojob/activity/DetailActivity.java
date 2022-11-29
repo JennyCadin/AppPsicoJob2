@@ -1,4 +1,4 @@
-package com.jenny.psicojob.activity;
+package com.jenny.appsicojob.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.jenny.psicojob.R;
-import com.jenny.psicojob.model.ItemList;
+import com.jenny.appsicojob.R;
+import com.jenny.appsicojob.model.ItemList;
 
 public class DetailActivity extends AppCompatActivity {
     private ImageView imgItemDetail;

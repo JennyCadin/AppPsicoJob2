@@ -1,26 +1,13 @@
-package com.jenny.psicojob.activity;
+package com.jenny.appsicojob.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import com.jenny.psicojob.R;
-import com.jenny.psicojob.adaptador.RecyclerAdapter;
-import com.jenny.psicojob.model.ItemList;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.jenny.appsicojob.R;
 
 public class Bienvenido extends AppCompatActivity {
 

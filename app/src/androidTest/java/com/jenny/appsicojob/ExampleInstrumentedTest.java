@@ -1,4 +1,4 @@
-package com.jenny.psicojob;
+package com.jenny.appsicojob;
 
 import android.content.Context;
 

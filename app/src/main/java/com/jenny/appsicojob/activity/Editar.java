@@ -1,6 +1,6 @@
-package com.jenny.psicojob.activity;
+package com.jenny.appsicojob.activity;
 
-import static com.jenny.psicojob.activity.Constants.NOMBRE_BASE_DATOS;
+import static com.jenny.appsicojob.activity.Constants.NOMBRE_BASE_DATOS;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.jenny.psicojob.R;
+import com.jenny.appsicojob.R;
 
 
 import androidx.appcompat.app.AppCompatActivity;

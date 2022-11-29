@@ -1,6 +1,5 @@
-package com.jenny.psicojob.adaptador;
+package com.jenny.appsicojob.adaptador;
 
-import android.content.Intent;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.jenny.psicojob.R;
-import com.jenny.psicojob.activity.DetailActivity;
-import com.jenny.psicojob.model.ItemList;
+import com.jenny.appsicojob.R;
+import com.jenny.appsicojob.model.ItemList;
 
 import java.util.ArrayList;
 import java.util.List;
