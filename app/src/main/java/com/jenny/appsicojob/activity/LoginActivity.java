@@ -49,6 +49,11 @@ public class LoginActivity extends AppCompatActivity {
             String nombre = txtIngresonombre.getText().toString();
             String email = editEmail.getText().toString();
             String password = editPassword.getText().toString();
+
+            txtIngresonombre.setText("");
+            editEmail.setText("");
+            editPassword.setText("");
+
             mAuth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this, task -> {
                         if (task.isSuccessful()) {
@@ -84,5 +89,15 @@ public class LoginActivity extends AppCompatActivity {
         });
 
     }
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            Intent intent = new Intent(LoginActivity.this, Bienvenido.class);
 
+            startActivity(intent);
+        }
+    }
 }

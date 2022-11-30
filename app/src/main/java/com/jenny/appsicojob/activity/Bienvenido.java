@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.jenny.appsicojob.R;
 
 public class Bienvenido extends AppCompatActivity {
@@ -19,11 +20,14 @@ public class Bienvenido extends AppCompatActivity {
         setContentView(R.layout.activity_bienvenido);
 
         tv1 = (TextView) findViewById(R.id.tv1);
-        String nombre = getIntent().getStringExtra("nombre");
-        tv1.setText("Hola  " + nombre + " :D");
+        if(getIntent().hasExtra("nombre")){
+            String nombre = getIntent().getStringExtra("nombre");
+            tv1.setText("Hola  " + nombre + " :D");
+        }
 
         Button btnInsertar1 = findViewById(R.id.button7);
         Button btnInsertar = findViewById(R.id.button3);
+        Button btnCerrarSesion = findViewById(R.id.buttoncerrarsesion);
 
         btnInsertar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +44,14 @@ public class Bienvenido extends AppCompatActivity {
                 startActivity(intent);
 
 
+            }
+        });
+
+        btnCerrarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                finish();
             }
         });
     }
